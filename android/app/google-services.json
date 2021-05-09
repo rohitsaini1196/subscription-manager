@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "905731201931",
+    "project_id": "subscription-manager-48541",
+    "storage_bucket": "subscription-manager-48541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905731201931:android:0dc3e079bfef76790bad8e",
+        "android_client_info": {
+          "package_name": "com.example.subscription_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905731201931-d6p88oa7le09hdlv1vepusv0iurjrlp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.subscription_manager",
+            "certificate_hash": "d5a826d48f97beed36dc2c5d275396377d16ab7f"
+          }
+        },
+        {
+          "client_id": "905731201931-gl0cs00m38k2n73giphks9a8mtp6sldh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6UpsK_HPW3yA6ydKXbIaPzgQ-DMhlFEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905731201931-gl0cs00m38k2n73giphks9a8mtp6sldh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
