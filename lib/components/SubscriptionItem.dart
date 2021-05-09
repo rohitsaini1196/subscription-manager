@@ -13,6 +13,14 @@ class SubscriptionItem extends StatefulWidget {
 }
 
 class _SubscriptionItemState extends State<SubscriptionItem> {
+  int diffD;
+  @override
+  void initState() {
+    super.initState();
+    final date2 = DateTime.now();
+    diffD = widget.subscription.startDate.difference(date2).inDays;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -31,7 +39,21 @@ class _SubscriptionItemState extends State<SubscriptionItem> {
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 2.0),
               child: Column(
                 children: [
-                  Text("26 Days remaining"),
+                  RichText(
+                      text: TextSpan(children: [
+                    TextSpan(
+                      text: diffD.toString(),
+                      style: TextStyle(
+                          color: Colors.black.withOpacity(0.9),
+                          fontWeight: FontWeight.bold),
+                    ),
+                    TextSpan(
+                      text: " Days Remaining",
+                      style: TextStyle(
+                          color: Colors.black.withOpacity(0.5),
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ])),
                   Text(DateFormat("MMMM dd, yyyy")
                       .format(widget.subscription.finishDate))
                 ],

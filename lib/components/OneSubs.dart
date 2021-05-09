@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:subscription_manager/classes/Subscription.dart';
 import 'package:intl/intl.dart';
+import 'package:subscription_manager/screens/Edit.dart';
 import 'package:subscription_manager/screens/Home.dart';
 import 'package:subscription_manager/services/DataRepo.dart';
 
@@ -118,7 +119,14 @@ class OneSubs extends StatelessWidget {
                     alignment: MainAxisAlignment.start,
                     children: [
                       FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) => EditSubs(
+                                        subscription: subscription,
+                                        subId: subId)));
+                          },
                           child: const Text('Edit'),
                           color: Colors.blueAccent),
                       FlatButton(
